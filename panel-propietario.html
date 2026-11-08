@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="panel-propietario">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="app">
+  <aside class="sidebar" aria-label="Menú principal"><div class="sidebar-inner">
+    <a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a>
+    <span class="role-tag">Cuenta de propietario</span>
+    <nav class="side-nav"><a href="panel-propietario.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></a><a href="buscar.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar servicios</span></a><a href="solicitudes.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg><span>Mis solicitudes</span></a><a href="mascotas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg><span>Mis mascotas</span></a></nav>
+    <div class="side-foot">
+      <a class="btn btn-ghost btn-block" href="login.html" style="justify-content:flex-start"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Cerrar sesión</a>
+    </div>
+  </div></aside>
+  <div class="main">
+    <header class="topbar">
+      <span class="mobile-logo"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a></span>
+      <nav class="crumbs" aria-label="Ruta de navegación">Inicio</nav>
+      <div class="user-chip">
+        <div class="who"><strong>Camila Torres</strong><span>Propietaria</span></div>
+        <div class="avatar avatar-sm av-orange" aria-hidden="true">CT</div>
+        <a class="btn btn-ghost btn-sm logout-top" href="login.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lo-txt">Salir</span></a>
+      </div>
+    </header>
+    <main id="contenido" class="content">
+
+<div class="alert alert-success" id="welcome-new" hidden style="margin-bottom:20px"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><div><strong>¡Tu cuenta fue creada!</strong>Registra a tu mascota y busca tu primer servicio.<div class="row" style="margin-top:8px"><a class="btn btn-primary btn-sm" href="mascotas.html?nueva=1"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Agregar mascota</a><a class="btn btn-secondary btn-sm" href="buscar.html">Buscar servicios</a></div></div></div>
+<div class="page-head"><div><h1>Hola, Camila</h1><p>Esto es lo que pasa con las solicitudes de tus mascotas.</p></div>
+  <a class="btn btn-primary" href="buscar.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Buscar servicios</a></div>
+<div class="grid grid-3" style="margin-bottom:24px">
+  <a class="card stat" href="solicitudes.html?estado=pendiente" style="text-decoration:none;color:inherit"><div class="stat-ico tone-warning"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="num" id="st-pend">0</div><div class="lbl">Solicitudes pendientes</div></div></a>
+  <a class="card stat" href="solicitudes.html?estado=aceptada" style="text-decoration:none;color:inherit"><div class="stat-ico tone-success"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></div><div><div class="num" id="st-acc">0</div><div class="lbl">Reservas próximas aceptadas</div></div></a>
+  <a class="card stat" href="mascotas.html" style="text-decoration:none;color:inherit"><div class="stat-ico tone-accent"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></div><div><div class="num" id="st-pets">0</div><div class="lbl">Mascotas registradas</div></div></a>
+</div>
+<div class="split">
+  <section class="card" aria-labelledby="up-title"><div class="card-head"><h2 id="up-title">Próximas reservas</h2><a class="small" href="solicitudes.html">Ver historial</a></div>
+    <div class="req-list" id="upcoming"></div></section>
+  <div class="stack">
+    <section class="card" aria-labelledby="qs-title"><h2 id="qs-title" style="font-size:1.125rem">Búsqueda rápida</h2>
+      <form id="quick-search" role="search">
+        <div class="field"><label for="qs-type">Tipo de servicio</label><select class="select" id="qs-type"><option value="">Todos los servicios</option><option value="veterinaria">Veterinaria</option><option value="peluqueria">Peluquería</option><option value="paseo">Paseo</option><option value="cuidado">Cuidado temporal</option></select></div>
+        <div class="field"><label for="qs-zone">Zona</label><select class="select" id="qs-zone"><option value="">Todas las zonas</option><option value="Chapinero">Chapinero</option><option value="Usaquén">Usaquén</option><option value="Suba">Suba</option><option value="Teusaquillo">Teusaquillo</option><option value="Kennedy">Kennedy</option></select></div>
+        <button class="btn btn-primary btn-block" type="submit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Buscar</button></form></section>
+    <section class="card" aria-labelledby="pm-title"><div class="card-head"><h2 id="pm-title">Mis mascotas</h2><a class="small" href="mascotas.html">Gestionar</a></div><div id="pets-mini"></div></section>
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+<nav class="tabbar" style="--tabs:4" aria-label="Menú principal móvil"><a href="panel-propietario.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></a><a href="buscar.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar</span></a><a href="solicitudes.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg><span>Solicitudes</span></a><a href="mascotas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg><span>Mascotas</span></a></nav>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

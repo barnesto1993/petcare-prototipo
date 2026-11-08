@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis solicitudes · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="solicitudes">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="app">
+  <aside class="sidebar" aria-label="Menú principal"><div class="sidebar-inner">
+    <a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a>
+    <span class="role-tag">Cuenta de propietario</span>
+    <nav class="side-nav"><a href="panel-propietario.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></a><a href="buscar.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar servicios</span></a><a href="solicitudes.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg><span>Mis solicitudes</span></a><a href="mascotas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg><span>Mis mascotas</span></a></nav>
+    <div class="side-foot">
+      <a class="btn btn-ghost btn-block" href="login.html" style="justify-content:flex-start"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Cerrar sesión</a>
+    </div>
+  </div></aside>
+  <div class="main">
+    <header class="topbar">
+      <span class="mobile-logo"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a></span>
+      <nav class="crumbs" aria-label="Ruta de navegación"><a href="panel-propietario.html">Inicio</a> / Mis solicitudes</nav>
+      <div class="user-chip">
+        <div class="who"><strong>Camila Torres</strong><span>Propietaria</span></div>
+        <div class="avatar avatar-sm av-orange" aria-hidden="true">CT</div>
+        <a class="btn btn-ghost btn-sm logout-top" href="login.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lo-txt">Salir</span></a>
+      </div>
+    </header>
+    <main id="contenido" class="content">
+
+<div class="page-head"><div><h1>Mis solicitudes</h1><p>Historial de reservas y su estado actual.</p></div><a class="btn btn-primary" href="buscar.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Nueva solicitud</a></div>
+<div class="tabs" id="req-tabs" role="tablist" aria-label="Filtrar por estado"><button class="tab" role="tab" data-f="todas" aria-selected="false">Todas<span class="n">0</span></button><button class="tab" role="tab" data-f="pendiente" aria-selected="false">Pendientes<span class="n">0</span></button><button class="tab" role="tab" data-f="aceptada" aria-selected="false">Aceptadas<span class="n">0</span></button><button class="tab" role="tab" data-f="rechazada" aria-selected="false">Rechazadas<span class="n">0</span></button></div>
+<div class="req-list" id="req-list" role="tabpanel" aria-live="polite"></div>
+
+    </main>
+  </div>
+</div>
+<nav class="tabbar" style="--tabs:4" aria-label="Menú principal móvil"><a href="panel-propietario.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></a><a href="buscar.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Buscar</span></a><a href="solicitudes.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg><span>Solicitudes</span></a><a href="mascotas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg><span>Mascotas</span></a></nav>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

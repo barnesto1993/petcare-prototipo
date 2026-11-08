@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iniciar sesión · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="login">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="auth">
+<aside class="auth-aside"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a>
+  <div><h2>Qué bueno verte de nuevo</h2><p>Tus solicitudes, tus mascotas y tus proveedores favoritos te esperan.</p><ul><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>Busca por tipo de servicio y zona</span></li><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Envía solicitudes con fecha y hora</span></li><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg><span>Consulta el estado en todo momento</span></li></ul></div>
+  <p class="small" style="margin:0;color:var(--primary-100)">Prototipo académico · 2026</p>
+  <svg class="paw-deco" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="22" cy="42" rx="10" ry="13"/><ellipse cx="40" cy="22" rx="10" ry="13"/><ellipse cx="60" cy="22" rx="10" ry="13"/><ellipse cx="78" cy="42" rx="10" ry="13"/><path d="M50 46c-14 0-26 16-26 30 0 9 8 12 15 12 5 0 7-3 11-3s6 3 11 3c7 0 15-3 15-12 0-14-12-30-26-30z"/></svg>
+</aside>
+<main id="contenido" class="auth-main"><div class="auth-form">
+  <span class="mobile-logo"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a></span>
+  <h1>Iniciar sesión</h1>
+  <p class="sub">Ingresa con el correo y la contraseña de tu cuenta.</p>
+  <div class="alert alert-danger" id="login-error" hidden tabindex="-1" role="alert" style="margin-bottom:16px"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><div><strong>No pudimos iniciar sesión</strong>El correo o la contraseña no son correctos. Revisa los datos e inténtalo de nuevo.</div></div>
+  <form id="login-form" novalidate>
+    <div class="field" id="f-email"><label for="email">Correo electrónico <span class="req-mark" aria-hidden="true">*</span></label><input class="input" id="email" type="email" autocomplete="email" placeholder="nombre@correo.com" aria-describedby="email-help"><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Escribe un correo válido</span></span></div>
+    <div class="field" id="f-password"><label for="password">Contraseña <span class="req-mark" aria-hidden="true">*</span></label><div class="pw-wrap"><input class="input" id="password" type="password" autocomplete="current-password" placeholder="Tu contraseña"><button type="button" class="pw-toggle" aria-pressed="false">Mostrar</button></div><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Escribe tu contraseña</span></span></div>
+    <div class="row-between" style="margin:-4px 0 20px"><label class="check"><input type="checkbox"> Recordarme</label><a class="small" href="#" title="Fuera del alcance del MVP">¿Olvidaste tu contraseña?</a></div>
+    <button class="btn btn-primary btn-block btn-lg" type="submit">Iniciar sesión</button>
+  </form>
+  <p class="small" style="text-align:center;margin-top:20px">¿No tienes cuenta? <a href="registro.html"><strong>Crear una cuenta</strong></a></p>
+  <div class="demo-box"><strong>Modo demostración:</strong> entra directamente con un rol.
+    <div class="row"><a class="btn btn-secondary btn-sm" href="panel-propietario.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Propietario</a><a class="btn btn-secondary btn-sm" href="panel-proveedor.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5"/><path d="M4 9v11h16V9"/><path d="M9.5 20v-6h5v6"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></svg>Proveedor</a></div></div>
+</div></main></div>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

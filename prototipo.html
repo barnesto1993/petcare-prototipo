@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa del prototipo · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="prototipo">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="topnav"><div class="container"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a><nav><a class="btn btn-ghost" href="estilos.html">Guía de estilos</a></nav></div></header>
+<main id="contenido" class="container proto-map" style="padding-top:40px;padding-bottom:60px">
+<span class="eyebrow">Actividad 2 · Prototipo navegable</span><h1>Mapa del prototipo PetCare</h1>
+<p class="muted" style="max-width:720px">Cada pantalla corresponde a un requisito o historia de usuario del MVP (Actividad 1). Los datos son de demostración y se guardan en tu navegador, así que puedes enviar una solicitud como propietario y luego aceptarla como proveedor.</p>
+<div class="row"><button class="btn btn-secondary btn-sm" id="reset-demo">Restablecer datos de demostración</button></div>
+<h2 style="font-size:1.1rem;margin:28px 0 12px">Público</h2><div class="grid grid-3"><a class="card" href="index.html"><span class="tag">Búsqueda rápida, categorías, cómo funciona</span><h3 style="font-size:1.05rem;margin:4px 0 0">Inicio (landing)</h3></a><a class="card" href="login.html"><span class="tag">HU-02 · RF-02</span><h3 style="font-size:1.05rem;margin:4px 0 0">Inicio de sesión</h3></a><a class="card" href="registro.html"><span class="tag">HU-01 · RF-01</span><h3 style="font-size:1.05rem;margin:4px 0 0">Registro con rol</h3></a></div><h2 style="font-size:1.1rem;margin:28px 0 12px">Propietario</h2><div class="grid grid-3"><a class="card" href="panel-propietario.html"><span class="tag">Resumen, próximas reservas, búsqueda rápida</span><h3 style="font-size:1.05rem;margin:4px 0 0">Panel principal</h3></a><a class="card" href="buscar.html"><span class="tag">HU-04 · RF-05</span><h3 style="font-size:1.05rem;margin:4px 0 0">Buscar servicios</h3></a><a class="card" href="proveedor.html?id=p5"><span class="tag">RF-06</span><h3 style="font-size:1.05rem;margin:4px 0 0">Perfil del proveedor</h3></a><a class="card" href="solicitud.html?prov=p5&serv=s51"><span class="tag">HU-05 · RF-07</span><h3 style="font-size:1.05rem;margin:4px 0 0">Solicitar reserva</h3></a><a class="card" href="solicitudes.html"><span class="tag">HU-07 · RF-09</span><h3 style="font-size:1.05rem;margin:4px 0 0">Mis solicitudes</h3></a><a class="card" href="mascotas.html"><span class="tag">HU-08 · RF-03</span><h3 style="font-size:1.05rem;margin:4px 0 0">Mis mascotas</h3></a></div><h2 style="font-size:1.1rem;margin:28px 0 12px">Proveedor</h2><div class="grid grid-3"><a class="card" href="panel-proveedor.html"><span class="tag">Pendientes y agenda</span><h3 style="font-size:1.05rem;margin:4px 0 0">Panel del proveedor</h3></a><a class="card" href="solicitudes-recibidas.html"><span class="tag">HU-06 · RF-08 · RF-10</span><h3 style="font-size:1.05rem;margin:4px 0 0">Solicitudes recibidas</h3></a><a class="card" href="servicios.html"><span class="tag">HU-03 · RF-04</span><h3 style="font-size:1.05rem;margin:4px 0 0">Mis servicios</h3></a></div><h2 style="font-size:1.1rem;margin:28px 0 12px">Sistema de diseño</h2><div class="grid grid-3"><a class="card" href="estilos.html"><span class="tag">Tokens y componentes</span><h3 style="font-size:1.05rem;margin:4px 0 0">Guía de estilos (UI Kit)</h3></a><a class="card" href="index.html?wf=1"><span class="tag">Cualquier pantalla con ?wf=1</span><h3 style="font-size:1.05rem;margin:4px 0 0">Modo wireframe</h3></a></div>
+</main>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mis servicios · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="servicios">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="app">
+  <aside class="sidebar" aria-label="Menú principal"><div class="sidebar-inner">
+    <a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a>
+    <span class="role-tag">Cuenta de proveedor</span>
+    <nav class="side-nav"><a href="panel-proveedor.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></a><a href="solicitudes-recibidas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h5l1.5 3h5l1.5-3h5"/><path d="M5.5 5h13L21 13v6H3v-6z"/></svg><span>Solicitudes</span><span class="count" data-count="prov-pending" hidden>0</span></a><a href="servicios.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 13h18"/></svg><span>Mis servicios</span></a></nav>
+    <div class="side-foot">
+      <a class="btn btn-ghost btn-block" href="login.html" style="justify-content:flex-start"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>Cerrar sesión</a>
+    </div>
+  </div></aside>
+  <div class="main">
+    <header class="topbar">
+      <span class="mobile-logo"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a></span>
+      <nav class="crumbs" aria-label="Ruta de navegación"><a href="panel-proveedor.html">Inicio</a> / Mis servicios</nav>
+      <div class="user-chip">
+        <div class="who"><strong>Peluquería Huellitas</strong><span>Proveedor</span></div>
+        <div class="avatar avatar-sm av-orange" aria-hidden="true">PH</div>
+        <a class="btn btn-ghost btn-sm logout-top" href="login.html"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg><span class="lo-txt">Salir</span></a>
+      </div>
+    </header>
+    <main id="contenido" class="content">
+
+<div class="page-head"><div><h1>Mis servicios</h1><p><span id="svc-active">0</span> de <span id="svc-total">0</span> servicios activos. Solo los activos aparecen en la búsqueda.</p></div><button class="btn btn-primary" data-open="modal-svc"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Nuevo servicio</button></div>
+<div class="table-wrap stack-sm"><table class="table"><caption class="sr-only">Servicios publicados</caption>
+<thead><tr><th scope="col">Servicio</th><th scope="col">Precio</th><th scope="col">Duración</th><th scope="col">Estado</th><th scope="col"><span class="sr-only">Acciones</span></th></tr></thead>
+<tbody id="svc-body"></tbody></table></div>
+<div class="modal-backdrop" id="modal-svc" role="dialog" aria-modal="true" aria-labelledby="svc-modal-title">
+  <div class="modal modal-lg">
+    <h2 id="svc-modal-title">Nuevo servicio</h2>
+    <form id="svc-form" novalidate>
+  <div class="field" id="f-s-type"><label for="s-type">Tipo de servicio</label><select class="select" id="s-type" disabled><option>Peluquería</option></select><span class="help" id="s-type-help">Definido por el tipo de tu negocio</span></div>
+  <div class="field" id="f-s-name"><label for="s-name">Nombre del servicio <span class="req-mark" aria-hidden="true">*</span></label><input class="input" id="s-name" placeholder="Ej.: Baño y corte · perro pequeño"><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Escribe el nombre del servicio</span></span></div>
+  <div class="field" id="f-s-desc"><label for="s-desc">Descripción</label><textarea class="textarea" id="s-desc" maxlength="200" placeholder="Qué incluye, para qué mascotas…"></textarea><span class="help" id="s-desc-help">Opcional · máximo 200 caracteres</span></div>
+  <div class="grid grid-2" style="gap:16px">
+    <div class="field" id="f-s-price"><label for="s-price">Precio de referencia (COP) <span class="req-mark" aria-hidden="true">*</span></label><input class="input" id="s-price" type="number" min="0" step="1000" inputmode="numeric" placeholder="45000"><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Escribe un precio válido</span></span></div>
+    <div class="field" id="f-s-dur"><label for="s-dur">Duración <span class="req-mark" aria-hidden="true">*</span></label><select class="select" id="s-dur"><option value="">Selecciona</option><option value="15">15 min</option><option value="30">30 min</option><option value="45">45 min</option><option value="60">60 min</option><option value="75">75 min</option><option value="90">90 min</option><option value="120">2 h</option></select><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Elige la duración</span></span></div>
+  </div>
+  <p class="small muted" style="margin:0">Zona y datos de contacto se toman de tu perfil: Chapinero · 300 555 0101.</p>
+</form>
+    <div class="modal-actions"><button class="btn btn-ghost" data-close>Cancelar</button><button class="btn btn-primary" type="submit" form="svc-form">Guardar servicio</button></div>
+  </div>
+</div>
+
+    </main>
+  </div>
+</div>
+<nav class="tabbar" style="--tabs:3" aria-label="Menú principal móvil"><a href="panel-proveedor.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Inicio</span></a><a href="solicitudes-recibidas.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 13h5l1.5 3h5l1.5-3h5"/><path d="M5.5 5h13L21 13v6H3v-6z"/></svg><span>Solicitudes</span></a><a href="servicios.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2M3 13h18"/></svg><span>Servicios</span></a></nav>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

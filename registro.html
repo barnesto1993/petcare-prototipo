@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crear cuenta · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="registro">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<div class="auth">
+<aside class="auth-aside"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a>
+  <div><h2>Crea tu cuenta en menos de un minuto</h2><p>Elige si vas a buscar servicios para tu mascota o a ofrecerlos.</p><ul><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg><span>Propietarios: busca, solicita y haz seguimiento</span></li><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5"/><path d="M4 9v11h16V9"/><path d="M9.5 20v-6h5v6"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></svg><span>Proveedores: publica servicios y gestiona solicitudes</span></li><li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span>Solo pedimos los datos necesarios</span></li></ul></div>
+  <p class="small" style="margin:0;color:var(--primary-100)">Prototipo académico · 2026</p>
+  <svg class="paw-deco" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="22" cy="42" rx="10" ry="13"/><ellipse cx="40" cy="22" rx="10" ry="13"/><ellipse cx="60" cy="22" rx="10" ry="13"/><ellipse cx="78" cy="42" rx="10" ry="13"/><path d="M50 46c-14 0-26 16-26 30 0 9 8 12 15 12 5 0 7-3 11-3s6 3 11 3c7 0 15-3 15-12 0-14-12-30-26-30z"/></svg>
+</aside>
+<main id="contenido" class="auth-main"><div class="auth-form">
+  <span class="mobile-logo"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a></span>
+  <h1>Crear cuenta</h1>
+  <p class="sub">Los campos marcados con <span class="req-mark">*</span> son obligatorios.</p>
+  <form id="register-form" novalidate>
+    <div class="field" id="f-role" style="margin:0">
+    <fieldset class="role-picker"><legend>¿Cómo usarás PetCare? <span class="req-mark" aria-hidden="true">*</span></legend>
+      <label class="role-opt"><input type="radio" name="role" value="propietario" checked><span class="box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg><strong>Tengo mascotas</strong><span>Quiero buscar y solicitar servicios</span></span></label>
+      <label class="role-opt"><input type="radio" name="role" value="proveedor"><span class="box"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5"/><path d="M4 9v11h16V9"/><path d="M9.5 20v-6h5v6"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></svg><strong>Ofrezco servicios</strong><span>Quiero publicar mi negocio</span></span></label>
+    </fieldset><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Elige un tipo de cuenta</span></span></div>
+    <div class="field" id="f-name"><label for="name">Nombre completo o del negocio <span class="req-mark" aria-hidden="true">*</span></label><input class="input" id="reg-name" autocomplete="name" placeholder="Ej.: Camila Torres"><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Escribe tu nombre</span></span></div>
+    <div class="field" id="f-reg-email"><label for="reg-email">Correo electrónico <span class="req-mark" aria-hidden="true">*</span></label><input class="input" id="reg-email" type="email" autocomplete="email" placeholder="nombre@correo.com"><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Escribe un correo válido</span></span></div>
+    <div class="field" id="f-reg-password"><label for="reg-password">Contraseña <span class="req-mark" aria-hidden="true">*</span></label><div class="pw-wrap"><input class="input" id="reg-password" type="password" autocomplete="new-password" aria-describedby="pw-meter"><button type="button" class="pw-toggle" aria-pressed="false">Mostrar</button></div><span class="help" id="pw-meter" aria-live="polite">Mínimo 8 caracteres (0/8)</span><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>La contraseña debe tener al menos 8 caracteres</span></span></div>
+    <div class="field" id="f-reg-password2"><label for="reg-password2">Confirmar contraseña <span class="req-mark" aria-hidden="true">*</span></label><input class="input" id="reg-password2" type="password" autocomplete="new-password"><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Las contraseñas no coinciden</span></span></div>
+    <div class="field" id="f-terms"><label class="check" style="font-weight:400"><input type="checkbox" id="reg-terms"> <span>Acepto los términos de uso y la política de tratamiento de datos personales.</span></label><span class="error-msg"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5h.01"/></svg><span>Debes aceptar los términos para continuar</span></span></div>
+    <button class="btn btn-primary btn-block btn-lg" type="submit">Crear cuenta</button>
+  </form>
+  <p class="small" style="text-align:center;margin-top:20px">¿Ya tienes cuenta? <a href="login.html"><strong>Inicia sesión</strong></a></p>
+</div></main></div>
+<script>if(/rol=proveedor/.test(location.search))document.addEventListener('DOMContentLoaded',()=>{document.querySelector('input[value=proveedor]').checked=true;});</script>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

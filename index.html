@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio · PetCare</title>
+<meta name="description" content="PetCare: encuentra y solicita servicios para tu mascota en un solo lugar.">
+<script>if(/[?&]wf=1/.test(location.search))document.documentElement.classList.add('wf');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body data-page="inicio">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="topnav"><div class="container"><a class="logo" href="index.html" aria-label="PetCare, ir al inicio"><span class="logo-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6.5" cy="10" r="2"/><circle cx="10" cy="5.5" r="2"/><circle cx="14" cy="5.5" r="2"/><circle cx="17.5" cy="10" r="2"/><path d="M8 18.5c0-3 1.8-5.5 4-5.5s4 2.5 4 5.5c0 1.5-1.8 2-4 2s-4-.5-4-2z"/></svg></span><span>Pet<b>Care</b></span></a>
+  <nav aria-label="Principal"><a class="link" href="buscar.html">Buscar servicios</a><a class="link" href="registro.html?rol=proveedor">Soy proveedor</a>
+  <a class="btn btn-ghost" href="login.html">Iniciar sesión</a><a class="btn btn-primary" href="registro.html">Crear cuenta</a></nav></div></header>
+<main id="contenido">
+<section class="hero"><div class="container">
+  <div>
+    <span class="eyebrow">Servicios para mascotas en Bogotá</span>
+    <h1>Todo lo que tu mascota necesita, <em>en un solo lugar</em></h1>
+    <p class="lead">Encuentra veterinarias, peluquerías, paseadores y cuidadores. Compara su información y envía tu solicitud de reserva sin escribir a diez números distintos.</p>
+    <form class="searchbox" id="hero-search" role="search" aria-label="Buscar servicios">
+      <div class="field"><label for="h-type">¿Qué necesitas?</label><select class="select" id="h-type"><option value="">Todos los servicios</option><option value="veterinaria">Veterinaria</option><option value="peluqueria">Peluquería</option><option value="paseo">Paseo</option><option value="cuidado">Cuidado temporal</option></select></div>
+      <div class="field"><label for="h-zone">¿Dónde?</label><select class="select" id="h-zone"><option value="">Todas las zonas</option><option value="Chapinero">Chapinero</option><option value="Usaquén">Usaquén</option><option value="Suba">Suba</option><option value="Teusaquillo">Teusaquillo</option><option value="Kennedy">Kennedy</option></select></div>
+      <button class="btn btn-primary btn-lg" type="submit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Buscar</button>
+    </form>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="circle-deco" style="width:70%;height:70%;top:-20%;right:-20%"></div>
+    <div class="circle-deco" style="width:50%;height:50%;bottom:-15%;left:-10%"></div>
+    <svg class="paw-big" viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="22" cy="42" rx="10" ry="13"/><ellipse cx="40" cy="22" rx="10" ry="13"/><ellipse cx="60" cy="22" rx="10" ry="13"/><ellipse cx="78" cy="42" rx="10" ry="13"/><path d="M50 46c-14 0-26 16-26 30 0 9 8 12 15 12 5 0 7-3 11-3s6 3 11 3c7 0 15-3 15-12 0-14-12-30-26-30z"/></svg>
+    <div class="bubble b1"><span class="avatar avatar-sm av-orange">PH</span><div><strong>Solicitud aceptada</strong><span class="muted">Baño y corte · sáb 10:00</span></div></div>
+    <div class="bubble b2"><span class="avatar avatar-sm av-teal"><svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><div><strong>4 proveedores</strong><span class="muted">cerca de Chapinero</span></div></div>
+  </div>
+</div></section>
+<section class="section"><div class="container">
+  <div class="section-head"><span class="eyebrow">Categorías</span><h2>¿Qué servicio buscas hoy?</h2><p>Explora por tipo de servicio y filtra por tu zona.</p></div>
+  <div class="grid grid-4"><a class="card cat-card" href="buscar.html?tipo=veterinaria">
+  <div class="cat-ico tone-info"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6.5-8 11-8 11z"/><path d="M12 9v5M9.5 11.5h5"/></svg></div><h3>Veterinaria</h3><p>Consultas, vacunas y controles preventivos.</p></a><a class="card cat-card" href="buscar.html?tipo=peluqueria">
+  <div class="cat-ico tone-accent"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.8L20 18M8.5 16.2L20 6"/></svg></div><h3>Peluquería</h3><p>Baño, corte y spa para perros y gatos.</p></a><a class="card cat-card" href="buscar.html?tipo=paseo">
+  <div class="cat-ico tone-primary"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h7a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h7"/></svg></div><h3>Paseo</h3><p>Paseadores de confianza en tu barrio.</p></a><a class="card cat-card" href="buscar.html?tipo=cuidado">
+  <div class="cat-ico tone-warning"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M12 17.5s-3-1.8-3-3.7a1.5 1.5 0 0 1 3-.5 1.5 1.5 0 0 1 3 .5c0 1.9-3 3.7-3 3.7z"/></svg></div><h3>Cuidado temporal</h3><p>Guardería, hospedaje y cuidado a domicilio.</p></a></div>
+</div></section>
+<section class="section" style="background:var(--white)"><div class="container">
+  <div class="section-head"><span class="eyebrow">Cómo funciona</span><h2>De la búsqueda a la reserva en minutos</h2></div>
+  <div class="grid grid-3 how">
+    <div class="card card-flat"><h3>Busca y compara</h3><p class="muted">Filtra por tipo de servicio y zona. Cada perfil muestra servicios, precios de referencia, horarios y contacto.</p></div>
+    <div class="card card-flat"><h3>Envía tu solicitud</h3><p class="muted">Elige el servicio, tu mascota, la fecha y la hora. El proveedor la recibe al instante.</p></div>
+    <div class="card card-flat"><h3>Sigue el estado</h3><p class="muted">Revisa si tu solicitud está pendiente, aceptada o rechazada, y consulta tu historial cuando quieras.</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="container">
+  <div class="cta-band"><div><h2>¿Ofreces servicios para mascotas?</h2><p>Publica tus servicios, recibe solicitudes organizadas y deja de llevar la agenda en mensajes sueltos.</p></div>
+  <a class="btn btn-primary btn-lg" href="registro.html?rol=proveedor">Registrar mi negocio</a></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container row-between"><span>© 2026 PetCare · Prototipo académico — Universidad Iberoamericana</span><a href="prototipo.html">Mapa del prototipo</a></div></footer>
+<script src="assets/icons.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
